@@ -31,21 +31,25 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content">Works just like any calculator, except it works only using addition.</div>
+        <div class="page-content">
+          Works just like any calculator, except it works only using addition.
+        </div>
         <br />
         <form action="#">
           <table class="button-inputs">
             <tr>
-              <td>
-                <div>
-                  <p>input</p>
-                </div>
+              <td colspan="2">
+                <div id="result"></div>
               </td>
               <td></td>
               <td>
-                <div>
-                  <p>output</p>
-                </div>
+                <button
+                  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="c"
+                  onclick="buttonClear(event)"
+                >
+                  C
+                </button>
               </td>
             </tr>
             <tr>
@@ -53,6 +57,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="1"
+                  onclick="buttonClicked(event);dis('1')"
                 >
                   1
                 </button>
@@ -61,6 +67,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="2"
+                  onclick="buttonClicked(event);dis('2')"
                 >
                   2
                 </button>
@@ -69,6 +77,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="3"
+                  onclick="buttonClicked(event);dis('3')"
                 >
                   3
                 </button>
@@ -77,6 +87,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="+"
+                  onclick="buttonClicked(event);dis('+')"
                 >
                   +
                 </button>
@@ -87,6 +99,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="4"
+                  onclick="buttonClicked(event);dis('4')"
                 >
                   4
                 </button>
@@ -95,6 +109,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="5"
+                  onclick="buttonClicked(event);dis('5')"
                 >
                   5
                 </button>
@@ -103,6 +119,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="6"
+                  onclick="buttonClicked(event);dis('6')"
                 >
                   6
                 </button>
@@ -111,6 +129,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="-"
+                  onclick="buttonClicked(event);dis('-')"
                 >
                   -
                 </button>
@@ -121,6 +141,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="7"
+                  onclick="buttonClicked(event);dis('7')"
                 >
                   7
                 </button>
@@ -129,6 +151,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="8"
+                  onclick="buttonClicked(event);dis('8')"
                 >
                   8
                 </button>
@@ -137,6 +161,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="9"
+                  onclick="buttonClicked(event);dis('9')"
                 >
                   9
                 </button>
@@ -145,18 +171,36 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="×"
+                  onclick="buttonClicked(event);dis('×')"
                 >
                   ×
                 </button>
               </td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
+              <td>
+                <button
+                  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="0"
+                  onclick="buttonClicked(event);dis('0')"
+                >
+                  0
+              </td>
+              <td>
+                <button
+                  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="."
+                  onclick="buttonClicked(event);dis('.')"
+                >
+                  .
+              </td>
               <td>
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="="
+                  onclick="buttonSolve(event)"
                 >
                   =
                 </button>
@@ -165,6 +209,8 @@
                 <!-- Raised button with ripple -->
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                  value="÷"
+                  onclick="buttonClicked(event);dis('÷')"
                 >
                   ÷
                 </button>
@@ -172,11 +218,6 @@
             </tr>
           </table>
         </form>
-        <br />
-        <br />
-        <div class="page-content-answer">
-          <div id="answer"></div>
-        </div>
       </main>
     </div>
   </body>

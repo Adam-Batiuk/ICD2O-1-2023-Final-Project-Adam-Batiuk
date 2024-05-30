@@ -6,10 +6,10 @@
 
 "use strict"
 
-function myButtonClicked() {
-    // define numbers
-    const number = parseInt(document.getElementById("your-number").value)
-    const sum = (number / 2) * (number + 1)
-    // print answer
-    document.getElementById("answer").innerHTML = "The answer is: " + sum
-  }
+function dis(val) {
+    document.getElementById("result").innerHTML += val
+}
+
+function buttonClicked() {
+    // console.log('asdf')
+}
