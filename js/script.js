@@ -11,5 +11,12 @@ function dis(val) {
 }
 
 function buttonClicked() {
-    // console.log('asdf')
+    console.log()
+} 
+
+function buttonSolve() {
+    let question = document.getElementById("result").innerHTML
+    let answer = question
+    document.getElementById("result").innerHTML = answer
 }
+

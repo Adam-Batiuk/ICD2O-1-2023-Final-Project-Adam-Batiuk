@@ -36,7 +36,7 @@
         </div>
         <br />
         <form action="#">
-          <table class="button-inputs">
+          <table class="button-inputs" id="inputs">
             <tr>
               <td colspan="2">
                 <div id="result"></div>
@@ -46,7 +46,7 @@
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
                   value="c"
-                  onclick="buttonClear(event)"
+                  onclick="buttonClear()"
                 >
                   C
                 </button>
@@ -200,7 +200,7 @@
                 <button
                   class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
                   value="="
-                  onclick="buttonSolve(event)"
+                  onclick="buttonSolve()"
                 >
                   =
                 </button>
