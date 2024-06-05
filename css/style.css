@@ -1,0 +1,19 @@
+/* Created by: Adam Batiuk
+* Created on: Mar 2024
+* This file contains the CSS for index.html
+*/
+
+.mdl-layout__content {
+  padding: 40px;
+}
+
+.mdl-layout__header-row {
+  justify-content: center;
+}
+
+.button-inputs {
+  background-color: #eee;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
