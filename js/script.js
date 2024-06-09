@@ -11,7 +11,7 @@ let newOperand = true
 let firstOperand = 0
 let secondOperand = 0
 let operator = "\0"
-let maxDigits = 12
+const maxDigits = 12
 
 function dis(val) {
   if (val == ".") {
